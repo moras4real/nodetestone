@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="bg-info">
+    <div class="col-8 mx-auto">
+        <form action="/update" method="post">
+            <div>
+                <input class="w-100 form-control" type="text" value=<%=info.firstname %> name="firstname">
+            </div>
+            <div>
+                <input class="w-100 form-control" type="text" value=<%=info.lastname %> name="lastname">
+            </div>
+            <div>
+                <input class="w-100 form-control" type="text" value=<%=info.email %> name="email">
+            </div>
+            <div>
+                <input class="w-100 form-control" type="text" value=<%=info.password %> name="password">
+            </div>
+            <div>
+                <button class="w-100 form-control" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
