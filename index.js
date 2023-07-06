@@ -11,9 +11,9 @@ let PORT = process.env.PORT_NUMBER || 4250
 
 const signupRouter = require('./routes/signup.route')
 app.use("/signup", signupRouter)
-const signinRouter = require('./routes/signin.route')
+const signinRouter = require('./routes/signup.route')
 app.use("/signin", signinRouter)
-const usersRouter = require('./routes/users.route')
+const usersRouter = require('./routes/signup.route')
 app.use("/users", usersRouter)
 
 
